@@ -36,5 +36,122 @@ font-family: 'Overpass', sans-serif;
 }
 
 body {
-    color: red;
+	background-color: rgb(18, 20, 23);
+	font-family: 'Overpass', serif;
+	font-size: 15px;
+}
+
+.card {
+	background: radial-gradient(circle at top, hsl(213, 19%, 18%), hsl(216, 12%, 10%));
+	height: 415px;
+	width: 415px;
+	margin: 190px auto;
+	padding: 30px;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.circle,
+.icon {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: hsl(213, 19%, 18%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	color: hsl(0, 0%, 100%);
+	font-weight: normal;
+}
+
+.message,
+.thankyou-msg,
+.picker {
+	color: hsl(217, 12%, 63%);
+}
+
+.message,
+.thankyou-msg,
+.pill {
+	line-height: 24px;
+	margin-top: 20px;
+	letter-spacing: 0.3px;
+}
+
+.picker {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.picker .circle:hover {
+	background-color: hsl(216, 12%, 54%);
+	cursor: pointer;
+	color: white;
+}
+
+.picker .circle:active,
+.picker #selected {
+	background-color: hsl(25, 97%, 53%);
+	color: white;
+}
+
+.btn {
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(25, 97%, 53%);
+	height: 45px;
+	width: 100%;
+	border-radius: 30px;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.btn:hover {
+	background-color: hsl(0, 0%, 100%);
+	color: hsl(25, 97%, 53%);
+}
+
+.btn:active {
+	transform: scale(0.99);
+}
+
+#thankyou {
+	display: none;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.thankyou-img {
+	margin-top: 20px;
+}
+
+.pill {
+	color: hsl(25, 97%, 53%);
+	background-color: hsl(213, 19%, 18%);
+	height: 35px;
+	border-radius: 30px;
+	padding: 8px 20px;
+	margin-top: 20px;
+}
+
+#thankyou .text {
+	text-align: center;
+}
+
+#thankyou .title {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.thankyou-msg {
+	margin-top: 0;
+}
+
+#rate {
 }

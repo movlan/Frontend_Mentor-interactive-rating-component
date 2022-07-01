@@ -6,37 +6,49 @@
 		<!-- displays site properly based on user's device -->
 
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-    <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css" />
 
 		<title>Frontend Mentor | Interactive rating component</title>
 	</head>
 	<body>
 		<main>
-			<div class="card rate">
-				<h1 class="title">How did we do?</h1>
-				<p class="message">
-					Please let us know how we did with your support request. All feedback is appreciated to
-					help us improve our offering!
-				</p>
-				<div class="picker">
-					<div class="choice">1</div>
-					<div class="choice">2</div>
-					<div class="choice">3</div>
-					<div class="choice">4</div>
-					<div class="choice">5</div>
+			<div class="card" id="rate">
+				<div class="icon"><img src="images/icon-star.svg" alt="star" /></div>
+				<div class="text">
+					<h1 class="title">How did we do?</h1>
+					<p class="message">
+						Please let us know how we did with your support request. All feedback is appreciated to
+						help us improve our offering!
+					</p>
 				</div>
-				<button class="btn">Submit</button>
+				<div class="picker">
+					<div class="circle">1</div>
+					<div class="circle">2</div>
+					<div class="circle">3</div>
+					<div class="circle">4</div>
+					<div class="circle">5</div>
+				</div>
+				<button class="btn" id="submit">Submit</button>
 			</div>
-			<div class="card thankyou">
-				<div class="pill">You selected <span id="rating">4</span> out of 5</div>
 
-				<h1 class="title">Thank you!</h1>
-				<p class="message">
-					We appreciate you taking the time to give a rating. If you ever need more support, don’t
-					hesitate to get in touch!
-				</p>
+			<div class="card" id="thankyou">
+				<div class="img">
+					<img
+						class="thankyou-img"
+						src="images/illustration-thank-you.svg"
+						alt="image of thankyou card"
+					/>
+				</div>
+				<div class="pill">You selected <span id="rating">4</span> out of 5</div>
+				<div class="text">
+					<h1 class="title">Thank you!</h1>
+					<p class="thankyou-msg">
+						We appreciate you taking the time to give a rating. If you ever need more support, don’t
+						hesitate to get in touch!
+					</p>
+				</div>
 			</div>
 		</main>
-  <script src="script.js"></script>
+		<script src="script.js"></script>
 	</body>
 </html>
