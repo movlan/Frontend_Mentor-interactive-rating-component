@@ -121,6 +121,10 @@ body {
 	transform: scale(0.99);
 }
 
+.btn, .btn:active, .btn:hover {
+	border: none;
+}
+
 #thankyou {
 	display: none;
 	align-items: center;
